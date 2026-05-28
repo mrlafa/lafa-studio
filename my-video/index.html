@@ -65,6 +65,15 @@
       data-height="1080"
     >
 
+      <audio
+        id="bg-music"
+        autoplay
+        loop
+        playsinline
+      >
+        <source src="assets/music/bg.mp3" type="audio/mpeg" />
+      </audio>
+
       <div
         id="scene-1"
         class="scene"
@@ -80,6 +89,9 @@
       <video
         id="scene-1-clip"
         class="scene"
+        data-start="0"
+        data-duration="3"
+        data-track-index="1"
         autoplay
         muted
         loop
@@ -104,6 +116,9 @@
       <video
         id="scene-2-clip"
         class="scene"
+        data-start="3"
+        data-duration="3"
+        data-track-index="1"
         autoplay
         muted
         loop
@@ -128,6 +143,9 @@
       <video
         id="scene-3-clip"
         class="scene"
+        data-start="6"
+        data-duration="3"
+        data-track-index="1"
         autoplay
         muted
         loop
