@@ -66,6 +66,19 @@
         <source src="assets/music/bg.mp3" type="audio/mpeg">
       </audio>
 
+      <audio id="line-d1" autoplay playsinline data-start="0" data-duration="2.5" data-track-index="3">
+        <source src="assets/line/narrator%20D1.wav" type="audio/wav">
+      </audio>
+      <audio id="line-d2" autoplay playsinline data-start="2.5" data-duration="2.5" data-track-index="3">
+        <source src="assets/line/Narator%20D2%20.wav" type="audio/wav">
+      </audio>
+      <audio id="line-ama-tashi" autoplay playsinline data-start="5" data-duration="5.3" data-track-index="3">
+        <source src="assets/line/Ama%20%26%20Tashi%20Wakeup%20D.wav" type="audio/wav">
+      </audio>
+      <audio id="line-d3" autoplay playsinline data-start="12" data-duration="3.97" data-track-index="3">
+        <source src="assets/line/Narrator%20D3.wav" type="audio/wav">
+      </audio>
+
       <div id="scene-1" class="scene" data-composition-id="scene1-logo-intro" data-composition-src="compositions/scene1-logo-intro.html" data-start="0" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
       <video id="scene-1-clip" class="scene" data-start="0" data-duration="3.5" data-track-index="1" autoplay muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;">
@@ -99,9 +112,9 @@
       <div id="scene-10" class="scene" data-composition-id="scene10-post-credit-hook" data-composition-src="compositions/scene10-post-credit-hook.html" data-start="22.5" data-duration="3" data-track-index="1" data-width="1920" data-height="1080"></div>
 
       <!-- Captions -->
-      <div data-data-hf-studio-original-display="" data-data-hf-studio-original-box-sizing="border-box" data-data-hf-studio-original-flex-shrink="" data-data-hf-studio-original-flex-grow="" data-data-hf-studio-original-flex-basis="" data-data-hf-studio-original-max-height="none" data-data-hf-studio-original-max-width="none" data-data-hf-studio-original-min-height="0px" data-data-hf-studio-original-min-width="0px" data-data-hf-studio-original-height="1080px" data-data-hf-studio-original-width="1905px" data-data-hf-studio-box-size="true" style="--hf-studio-width:1898px;--hf-studio-height:1080px;width:1898px;height:1080px;min-width:0px;min-height:0px;max-width:none;max-height:none;box-sizing:border-box;z-index:" id="captions-comp" data-composition-id="captions" data-start="2.5" data-duration="20" data-track-index="2" data-width="1920" data-height="1080">
+      <div data-data-hf-studio-original-display="" data-data-hf-studio-original-box-sizing="border-box" data-data-hf-studio-original-flex-shrink="" data-data-hf-studio-original-flex-grow="" data-data-hf-studio-original-flex-basis="" data-data-hf-studio-original-max-height="none" data-data-hf-studio-original-max-width="none" data-data-hf-studio-original-min-height="0px" data-data-hf-studio-original-min-width="0px" data-data-hf-studio-original-height="1080px" data-data-hf-studio-original-width="1905px" data-data-hf-studio-box-size="true" style="--hf-studio-width:1898px;--hf-studio-height:1080px;width:1898px;height:1080px;min-width:0px;min-height:0px;max-width:none;max-height:none;box-sizing:border-box;z-index:" id="captions-comp" data-composition-id="captions" data-start="0" data-duration="25.5" data-track-index="2" data-width="1920" data-height="1080">
         <div class="caption-text-wrapper">
-          <div id="caption-text" class="caption-line">Above the clouds… beyond the last roads of Nepal…</div>
+          <div id="caption-text" class="caption-line">Narrator D1: Above the clouds… beyond the last roads of Nepal…</div>
         </div>
 
         <script>
@@ -110,11 +123,11 @@
             const text = document.querySelector("#caption-text");
 
             const captions = [
-              [0, "Above the clouds… beyond the last roads of Nepal…"],
-              [3, "Tashi… even the mountains woke before you today."],
-              [6, "The mountain only respects people who respect it first."],
-              [9, "One day, Norbu… we will see what is beyond those mountains."],
-              [12, "Curious hearts often walk dangerous paths."],
+              [0, "Narrator D1: Above the clouds… beyond the last roads of Nepal…"],
+              [3, "Narrator D2: Tashi… even the mountains woke before you today."],
+              [6, "Tashi: Even the mountains woke before him today."],
+              [9, "Ama: One day, Norbu… we will see what is beyond those mountains."],
+              [12, "Narrator D3: Curious hearts often walk dangerous paths."],
               [15, "Spirits live in the mountains only for those who listen carefully."],
               [18, "What are you…?"],
               [21, "That night… the mountains whispered back."],
