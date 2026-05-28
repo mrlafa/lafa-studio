@@ -1,14 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
     <title>Upper Dolpa Episode 1</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=block"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=block" rel="stylesheet">
     <style>
       * {
         margin: 0;
@@ -30,7 +27,14 @@
         left: 0;
         width: 100%;
         height: 100%;
+        /* opacity: 0; */
       }
+      .canvas .label,
+      .canvas .title,
+      .canvas .subtitle {
+        display: none;
+      }
+      
       .caption-text-wrapper {
         position: absolute;
         bottom: 110px;
@@ -56,199 +60,46 @@
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="30"
-      data-width="1920"
-      data-height="1080"
-    >
+    <div id="root" data-composition-id="main" data-start="0" data-duration="25.5" data-width="1920" data-height="1080">
 
-      <audio
-        id="bg-music"
-        autoplay
-        loop
-        playsinline
-      >
-        <source src="assets/music/bg.mp3" type="audio/mpeg" />
+      <audio id="bg-music" autoplay loop playsinline data-start="0" data-duration="22.11" data-media-start="7.89" data-track-index="2">
+        <source src="assets/music/bg.mp3" type="audio/mpeg">
       </audio>
 
-      <div
-        id="scene-1"
-        class="scene"
-        data-composition-id="scene1-logo-intro"
-        data-composition-src="compositions/scene1-logo-intro.html"
-        data-start="0"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-1" class="scene" data-composition-id="scene1-logo-intro" data-composition-src="compositions/scene1-logo-intro.html" data-start="0" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <video
-        id="scene-1-clip"
-        class="scene"
-        data-start="0"
-        data-duration="3"
-        data-track-index="1"
-        autoplay
-        muted
-        loop
-        playsinline
-        style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;"
-      >
-        <source src="assets/clip/intro.mp4" type="video/mp4" />
+      <video id="scene-1-clip" class="scene" data-start="0" data-duration="3.5" data-track-index="1" autoplay muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;">
+        <source src="assets/clip/intro.mp4" type="video/mp4">
       </video>
 
-      <div
-        id="scene-2"
-        class="scene"
-        data-composition-id="scene2-family-home-fire"
-        data-composition-src="compositions/scene2-family-home-fire.html"
-        data-start="3"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-2" class="scene" data-composition-id="scene2-family-home-fire" data-composition-src="compositions/scene2-family-home-fire.html" data-start="2.5" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <video
-        id="scene-2-clip"
-        class="scene"
-        data-start="3"
-        data-duration="3"
-        data-track-index="1"
-        autoplay
-        muted
-        loop
-        playsinline
-        style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;"
-      >
-        <source src="assets/clip/family-home-fire.mp4" type="video/mp4" />
+      <video id="scene-2-clip" class="scene" data-start="2.5" data-duration="3.5" data-track-index="1" autoplay muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;">
+        <source src="assets/clip/family-home-fire.mp4" type="video/mp4">
       </video>
 
-      <div
-        id="scene-3"
-        class="scene"
-        data-composition-id="scene3-tashi-wakes-up"
-        data-composition-src="compositions/scene3-tashi-wakes-up.html"
-        data-start="6"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-3" class="scene" data-composition-id="scene3-tashi-wakes-up" data-composition-src="compositions/scene3-tashi-wakes-up.html" data-start="5" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <video
-        id="scene-3-clip"
-        class="scene"
-        data-start="6"
-        data-duration="3"
-        data-track-index="1"
-        autoplay
-        muted
-        loop
-        playsinline
-        style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;"
-      >
-        <source src="assets/clip/tashi-wakes-up.mp4" type="video/mp4" />
+      <video id="scene-3-clip" class="scene" data-start="5" data-duration="3.5" data-track-index="1" autoplay muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;">
+        <source src="assets/clip/tashi-wakes-up.mp4" type="video/mp4">
       </video>
 
-      <div
-        id="scene-4"
-        class="scene"
-        data-composition-id="scene4-morning-village"
-        data-composition-src="compositions/scene4-morning-village.html"
-        data-start="9"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-4" class="scene" data-composition-id="scene4-morning-village" data-composition-src="compositions/scene4-morning-village.html" data-start="7.5" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <div
-        id="scene-5"
-        class="scene"
-        data-composition-id="scene5-tashi-norbu-yak"
-        data-composition-src="compositions/scene5-tashi-norbu-yak.html"
-        data-start="12"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-5" class="scene" data-composition-id="scene5-tashi-norbu-yak" data-composition-src="compositions/scene5-tashi-norbu-yak.html" data-start="10" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <div
-        id="scene-6"
-        class="scene"
-        data-composition-id="scene6-ancient-monastery"
-        data-composition-src="compositions/scene6-ancient-monastery.html"
-        data-start="15"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-6" class="scene" data-composition-id="scene6-ancient-monastery" data-composition-src="compositions/scene6-ancient-monastery.html" data-start="12.5" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <div
-        id="scene-7"
-        class="scene"
-        data-composition-id="scene7-night-family-storm"
-        data-composition-src="compositions/scene7-night-family-storm.html"
-        data-start="18"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-7" class="scene" data-composition-id="scene7-night-family-storm" data-composition-src="compositions/scene7-night-family-storm.html" data-start="15" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <div
-        id="scene-8"
-        class="scene"
-        data-composition-id="scene8-glowing-mountain"
-        data-composition-src="compositions/scene8-glowing-mountain.html"
-        data-start="21"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-8" class="scene" data-composition-id="scene8-glowing-mountain" data-composition-src="compositions/scene8-glowing-mountain.html" data-start="17.5" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <div
-        id="scene-9"
-        class="scene"
-        data-composition-id="scene9-final-mountain"
-        data-composition-src="compositions/scene9-final-mountain.html"
-        data-start="24"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-9" class="scene" data-composition-id="scene9-final-mountain" data-composition-src="compositions/scene9-final-mountain.html" data-start="20" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
 
-      <div
-        id="scene-10"
-        class="scene"
-        data-composition-id="scene10-post-credit-hook"
-        data-composition-src="compositions/scene10-post-credit-hook.html"
-        data-start="27"
-        data-duration="3"
-        data-track-index="1"
-        data-width="1920"
-        data-height="1080"
-      ></div>
+      <div id="scene-10" class="scene" data-composition-id="scene10-post-credit-hook" data-composition-src="compositions/scene10-post-credit-hook.html" data-start="22.5" data-duration="3" data-track-index="1" data-width="1920" data-height="1080"></div>
 
       <!-- Captions -->
-      <div
-        id="captions-comp"
-        data-composition-id="captions"
-        data-start="3"
-        data-duration="24"
-        data-track-index="2"
-        data-width="1920"
-        data-height="1080"
-      >
+      <div data-data-hf-studio-original-display="" data-data-hf-studio-original-box-sizing="border-box" data-data-hf-studio-original-flex-shrink="" data-data-hf-studio-original-flex-grow="" data-data-hf-studio-original-flex-basis="" data-data-hf-studio-original-max-height="none" data-data-hf-studio-original-max-width="none" data-data-hf-studio-original-min-height="0px" data-data-hf-studio-original-min-width="0px" data-data-hf-studio-original-height="1080px" data-data-hf-studio-original-width="1905px" data-data-hf-studio-box-size="true" style="--hf-studio-width:1898px;--hf-studio-height:1080px;width:1898px;height:1080px;min-width:0px;min-height:0px;max-width:none;max-height:none;box-sizing:border-box;z-index:" id="captions-comp" data-composition-id="captions" data-start="2.5" data-duration="20" data-track-index="2" data-width="1920" data-height="1080">
         <div class="caption-text-wrapper">
           <div id="caption-text" class="caption-line">Above the clouds… beyond the last roads of Nepal…</div>
         </div>
@@ -286,6 +137,31 @@
     <script>
       window.__timelines = window.__timelines || {};
       const mainTl = gsap.timeline({ paused: true });
+      
+      // Fade in each scene at its start and fade out 0.5s before it ends
+      const sceneTimings = [
+        { id: "scene-1", start: 0, duration: 3.5 },
+        { id: "scene-2", start: 2.5, duration: 3.5 },
+        { id: "scene-3", start: 5, duration: 3.5 },
+        { id: "scene-4", start: 7.5, duration: 3.5 },
+        { id: "scene-5", start: 10, duration: 3.5 },
+        { id: "scene-6", start: 12.5, duration: 3.5 },
+        { id: "scene-7", start: 15, duration: 3.5 },
+        { id: "scene-8", start: 17.5, duration: 3.5 },
+        { id: "scene-9", start: 20, duration: 3.5 },
+        { id: "scene-10", start: 22.5, duration: 3 }
+      ];
+      
+      sceneTimings.forEach(scene => {
+        const el = document.getElementById(scene.id);
+        if (el) {
+          // Fade in
+          mainTl.from(el, { opacity: 0, duration: 0.5, ease: "power2.inOut" }, scene.start);
+          // Fade out (0.5s before scene ends)
+          mainTl.to(el, { opacity: 0, duration: 0.5, ease: "power2.inOut" }, scene.start + scene.duration - 0.5);
+        }
+      });
+      
       window.__timelines["main"] = mainTl;
     </script>
   </body>
